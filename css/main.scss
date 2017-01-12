@@ -225,9 +225,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
         
         .about {
-            text-align: justify;
-            margin: 0 4.5em 0 4.5em;
-            letter-spacing: -.03em;
+            text-align: center;
+            margin: 0 8em 0 8em;
+            font-size: 1em;
         }
 
 		h2 + p {
@@ -554,19 +554,12 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
     .about-image {
-        max-width: 30%;
-        float: left;
-        margin: 0.1em 1em 0em 4.3em;
-        border-radius: 5%;
+        max-width: 25%;
+        align-content: center;
+        margin-bottom: 2em;
+        border-radius: 20%;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     }
-    /* hide about image when media screen is small */
-
-@media screen and (max-width: 1000px) {
-    .about-image {
-        display:none;
-    }
-}
 
 /* List */
 
