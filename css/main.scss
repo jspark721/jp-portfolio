@@ -1242,11 +1242,6 @@ $baseurl: '{{ site.baseurl }}/images';
 			@include breakpoint(large) {
 				width: 90%;
 			}
-            
-            img {
-                width: 550px;
-                height: auto;
-            }
 
 			@include breakpoint(medium) {
 				width: 100%;
@@ -1913,6 +1908,10 @@ article {
         padding-bottom: 2em;
         h1 {
             color: _palette(bg);
+        }
+        img {
+            width: 550px !important;
+            height: auto;
         }
     }
 }
