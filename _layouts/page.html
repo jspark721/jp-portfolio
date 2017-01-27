@@ -1,16 +1,31 @@
----
-layout: default
----
-<article id="main">
+<!DOCTYPE html>
+<html>
 
-  <header>
-    <h2>{{ page.title }}</h2>
-    <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-  </header>
+  {% include head.html %}
 
-  <section class="wrapper style5">
-    <div class="inner">
-      {{ content }}
-    </div>
-  </section>
-</article>
+  <body>
+    <div id="page-wrapper">
+        {% include header.html %}
+        
+        <article id="main">
+
+          <header>
+            <h2>{{ page.title }}</h2>
+            <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+          </header>
+
+          <section class="wrapper style5">
+            <div class="inner">
+              {{ content }}
+            </div>
+          </section>
+            {% include footer.html %}
+          </article>
+
+          {% include scripts.html %}
+      </div>
+
+  </body>
+
+    
+</html>
