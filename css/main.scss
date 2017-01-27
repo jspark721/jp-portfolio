@@ -1752,7 +1752,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: center;
 
 		.icons {
-			font-size: 1.25em;
+			font-size: 1.5em;
 
 			a {
 				color: _palette(fg-light);
@@ -1847,3 +1847,58 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
+/* Posts */
+
+article,
+.comments {
+    border-bottom: 1px solid _palette(accent3, bg);
+    float: left;
+    width: 100%;
+}
+
+article {
+    background-color: #ABC4CB;
+    border-top: 2px solid _palette(accent2,bg);
+    header {
+        margin-bottom: 7%;
+        text-align: center;
+    }
+    a:hover {
+        .footnotes {
+            font-size: 0.9em;
+        }
+    }
+    header {
+        h1 {
+            margin: 2em 0 0.5em 0;
+            font-size: 1.5em;
+        }
+        .meta {
+            color: _palette(accent2, bg);
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            margin: 1em;
+            text-transform: uppercase;
+        }
+    }
+    h2 {
+        font-size: 2em;
+        color: _palette(accent2, bg);
+        line-height: 1.75em;
+        text-align: center;
+        padding: .5em;
+    }
+    .post-content {
+        padding: 0 10em 5em 10em; 
+        img {
+            width: 500px;
+            height: auto;
+        }
+        border-bottom: 2px solid _palette(accent2,bg);
+    }
+    .post-teaser {
+        border-bottom: 3px solid _palette(accent2,bg);
+        padding-bottom: 2em;
+    }
+}

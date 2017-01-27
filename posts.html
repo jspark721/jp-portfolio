@@ -3,7 +3,7 @@ layout: post
 ---
 
 <div class="posts">
-    <h2>My Posts</h2>
+    <h2>Blog Posts</h2>
     {% for post in site.posts %}
     <div class="post-teaser">
       <header>
@@ -19,9 +19,9 @@ layout: post
       <div class="excerpt">
         {{ post.excerpt }}
         <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.theme_settings.str_continue_reading }}
+            Read More
         </a>
       </div>
     </div>
     {% endfor %}
-  </div>
+</div>
