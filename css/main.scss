@@ -1233,7 +1233,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	.wrapper {
-		@include padding(6em, 0);
+		@include padding(4em, 0);
 
 		> .inner {
 			width: 60em;
@@ -1684,6 +1684,11 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+    
+    h4.cta {
+        color: _palette(accent5,bg) !important;
+        margin-top: -2em;
+    }
 
 /* Main */
 
@@ -1739,7 +1744,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
     .blog-header {
-        padding: 3em 0 1em 0;
+        padding: 4em 0 2em 0;
         background-color: _palette(accent2,bg);
         text-align: center;
         border-bottom: 0.1em solid _palette(bg);
