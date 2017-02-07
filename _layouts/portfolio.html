@@ -9,7 +9,12 @@
 
       {% include header.html %}
 
-      <article id="main">
+      <article id="main" style="background-image: url('{{site.baseurl}}/{{ page.feature-img}}');
+            background-attachment: fixed;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;">
         <header>
         <h1>{{ page.title }}</h1>
         <p class="meta">
