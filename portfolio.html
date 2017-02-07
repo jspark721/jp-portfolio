@@ -4,20 +4,23 @@ title: Portfolio
 ---
 
 <section class="gallery">
-    <h2>Portfolio</h5>
+    <h2>Portfolio</h2>
     <div class="box alt">
         <div class="row uniform 50%">
-            <div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-            
             
             {% for portfolio in site.portfolio %}
-            <div class="4u">
+            
+            <div class="6u">
+               
                 <span class="image fit">
-                    <img src=" {{ portfolio.thumbnail-path}}" alt=" {{ portfolio.title }}" />
+            
+                    <div class="zoomimg"><img src=" {{ portfolio.thumbnail-path}}" alt=" {{ portfolio.title }}"/></div>
+                    
+                    <div class="portfolio-title"><a href= "{{ portfolio.url | prepend: site.baseurl}}"> <h3>{{ portfolio.title }}</h3></a></div>
                 </span>
-                <div class="portfolio-title">
-                    <a href= "{{ portfolio.url | prepend: site.baseurl}}"> {{ portfolio.title }}</a>
-                </div>
+
+                
+                
             </div>
            {% endfor %}
             
@@ -25,3 +28,4 @@ title: Portfolio
     </div>
 </section>
 
+ 
