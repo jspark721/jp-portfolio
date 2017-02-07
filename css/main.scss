@@ -1866,6 +1866,16 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+/* Portfolio */
+.gallery {
+    padding: 1em 0 1em 0;
+    background-color: white;
+    h1, h2, h2, h4, h5, body {
+        color: _palette(accent1, bg);
+        padding-left: 1em;
+    }
+}
+
 /* Posts */
 .posts {
     h2 {

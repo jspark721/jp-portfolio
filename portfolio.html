@@ -1,12 +1,10 @@
 ---
-layout: gallery
+layout: default
 title: Portfolio
-description: Projects and Work
 ---
 
-<section>
-    <h4>Image</h4>
-    <h5>Fit</h5>
+<section class="gallery">
+    <h2>Portfolio</h5>
     <div class="box alt">
         <div class="row uniform 50%">
             <div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
@@ -22,35 +20,3 @@ description: Projects and Work
         </div>
     </div>
 </section>
-
-<div class="work">
-    <h2>My Work</h2>
-    {% for post in site.portfolio %}
-        <li>
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-          <a href="{{ project.url }}">{{ project.title }}</a>
-          <p>{{ project.short-description }}</p>
-        </li>
-    {% endfor %}
-</div>
-
-<div class="posts">
-    {% for post in site.posts %}
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-        </h1>
-        <p class="meta">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </p>
-      </header>
-      <div class="excerpt">
-        {{ post.excerpt }}
-        <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
-      </div>
-    </div>
-    {% endfor %}
-</div>
