@@ -1880,14 +1880,29 @@ $baseurl: '{{ site.baseurl }}/images';
     }
 }
 
+.zoomimg {
+    float: left;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.4s;
+    overflow: hidden;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    display: table; 
+}
+
+.zoomimg:hover img {
+    transform: scale(1.2);
+    transition: transform 0.4s, opacity 0.1s 0.3s; 
+} 
+
 .portfolio-title {
-    color: _palette(bg);
+    /*background: rgba(180,222,223, 0.85);*/
+    padding: 2em 10%;
     position: absolute;
-    margin-top: -5em;
-    padding-left: 1em;
-    background-color: rgba(255,255,255, 0.4);
     width: 100%;
-    font-size: 1.3em;
+    z-index: 999;
+    top: auto;
+    opacity: 1;
 }
 
 
