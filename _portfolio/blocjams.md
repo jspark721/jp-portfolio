@@ -2,6 +2,7 @@
 layout: post
 title: BlocJams
 feature-img: "images/desktop3.jpg"
+thumbnail-path: "images/desktop3.jpg"
 short-description: BlocJams for iOS is awesome!
 
 ---
