@@ -7,7 +7,16 @@ title: Portfolio
     <h2>Portfolio</h5>
     <div class="box alt">
         <div class="row uniform 50%">
-            <div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
+            {% for portfolio in site.portfolio %}
+            <div class="12u"><span class="image fit"><img src="{{ portfolio.thumbnail-path }}" alt="{{ portfolio.title}}" /></span></div>
+            <div class="panel-heading">
+              {{ portfolio.title }}
+            </div>
+            <div class="panel-body">
+                {{ portfolio.excerpt }}
+            </div>
+            {% endfor %}
+            
             <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
             <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
             <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
@@ -17,6 +26,8 @@ title: Portfolio
             <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
             <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
             <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+            
         </div>
     </div>
 </section>
+

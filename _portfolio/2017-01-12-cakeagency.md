@@ -1,8 +1,7 @@
 ---
 layout: post
-title: BlocJams
-feature-img: "images/desktop3.jpg"
-thumbnail-path: "images/desktop3.jpg"
-short-description: BlocJams for iOS is awesome!
+title: Cake Agency
+feature-img: "images/book2.jpg"
+thumbnail-path: "images/book2.jpg"
 ---
 This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.
